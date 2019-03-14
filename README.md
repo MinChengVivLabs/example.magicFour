@@ -2,9 +2,9 @@
 
 The purpose of this example is to create a capsule that will allow users to ask Bixby to reduce a number to get FOUR (i.e. the magic four)
 
-    - Some Javascript skill is required
-    - Explore the different options of bixby view
-    - This article is written by Min Cheng. 
+  - Some Javascript skill is required
+  - Explore the different options of bixby view
+  - This article is written by Min Cheng. 
     
 **Before you start!**
 
