@@ -1,0 +1,3 @@
+name (TypeInputStrNumber) {
+  description (integer input in a string, i.e. 'twenty' or 'five')
+}

@@ -1,0 +1,3 @@
+integer (TypeInputNumber) {
+  description (integer input, i.e. 213)
+}

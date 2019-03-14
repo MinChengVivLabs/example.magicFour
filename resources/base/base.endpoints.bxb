@@ -1,0 +1,8 @@
+endpoints {
+  action-endpoints {
+    action-endpoint (ActionMagicFour) {
+      accepted-inputs (str_number)
+      local-endpoint ("MagicFour.js")
+    }
+  }
+}

@@ -1,0 +1,11 @@
+action (ActionMagicFour) {
+  description (reduce to 'four')
+  type(Calculation)
+  collect {
+    input (str_number) {
+      type (TypeInputStrNumber)
+      min (Required) max (One)
+    }
+  }
+  output (TypeStrText)
+}
