@@ -1,3 +1,9 @@
+<p align="Center">
+  <img src="https://bixbydevelopers.com/dev/docs-assets/resources/dev-guide/bixby_logo_github-11221940070278028369.png">
+  <br/>
+  <h1 align="Center">Bixby Example Capsule -- example.magicFour</h1>
+</p>
+
 **Purpose**
 
 The purpose of this example is to create a capsule that will allow users to ask Bixby to reduce a number to get FOUR (i.e. the magic four)
@@ -5,6 +11,7 @@ The purpose of this example is to create a capsule that will allow users to ask 
   - Some Javascript skill (regular expression) is required
   - Explore the different options of bixby view
   - Can support up to 9 digits, but limited to 5 at the moment
+  - Add example of replace input when on-empty
   - Take both a number in string or pure digit as valid input (optional)
   - This example is written by Min Cheng. 
     
