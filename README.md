@@ -2,9 +2,11 @@
 
 The purpose of this example is to create a capsule that will allow users to ask Bixby to reduce a number to get FOUR (i.e. the magic four)
 
-  - Some Javascript skill is required
+  - Some Javascript skill (regular expression) is required
   - Explore the different options of bixby view
-  - This article is written by Min Cheng. 
+  - Can support up to 9 digits, but limited to 5 at the moment
+  - Take both a number in string or pure digit as valid input (optional)
+  - This example is written by Min Cheng. 
     
 **Before you start!**
 

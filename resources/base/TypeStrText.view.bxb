@@ -1,0 +1,42 @@
+result-view {
+  match {
+    TypeStrText(this)
+  }
+  message {
+    if (size(this) == 1) {
+      template ("Feel the MAGIC!")
+    }
+    else-if (size(this) < 4) {
+      template ("I can count up to three!")
+    }
+    else {
+      template ("Mmm... ") 
+    }
+  }
+  render {
+    if (size(this) == 1){
+      layout {
+        section {
+          content {
+            single-line {
+              text {
+                value("#{value(this)}")
+                style(Detail_L)
+              }
+            }
+          }
+        }
+      }
+    }
+    else {
+      list-of (this) {
+        where-each (item) {
+          paragraph {
+            value("#{value(item)}")
+            style(Detail_L)
+          }
+        }
+      }
+    }
+  }
+}
