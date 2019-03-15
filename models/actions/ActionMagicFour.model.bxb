@@ -1,11 +1,20 @@
 action (ActionMagicFour) {
   description (reduce to 'four')
-  type(Calculation)
+  type(Search)
   collect {
     input (str_number) {
       type (TypeInputStrNumber)
       min (Required) max (One)
     }
   }
-  output (TypeStrText)
+  output (TypeStrText) {
+    on-empty {
+      replace (str_number) {
+        intent {
+          goal { TypeInputStrNumber }
+          value {TypeInputStrNumber("20190315-1557-0808")}
+        }
+      }
+    }
+  }
 }

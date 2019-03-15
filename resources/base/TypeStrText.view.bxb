@@ -3,7 +3,11 @@ result-view {
     TypeStrText(this)
   }
   message {
-    if (size(this) == 1) {
+    if (size(this) == 0) {
+      // this message sticks after replace
+      template ("Zero encountered.")
+    }
+    else-if (size(this) == 1) {
       template ("Feel the MAGIC!")
     }
     else-if (size(this) < 4) {
@@ -14,7 +18,22 @@ result-view {
     }
   }
   render {
-    if (size(this) == 1){
+    if (size(this) == 0) {
+      // this output is gone after replace 
+      layout {
+        section {
+          content {
+            single-line {
+              text {
+                value("Replacing...")
+                style(Detail_L)
+              }
+            }
+          }
+        }
+      }
+    }
+    else-if (size(this) == 1){
       layout {
         section {
           content {

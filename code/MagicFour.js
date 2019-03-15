@@ -50,6 +50,8 @@ function NextStep(str_number) {
 module.exports.function = function magicFour (str_number) {
   if (!str_number)
     return  'Sorry, I need more training.'
+  if (str_number == 'zero')
+    return [];
   NextStep(str_number)
   var rslt_name = ''
   for (var i=0; i<steps.length; i++) {
